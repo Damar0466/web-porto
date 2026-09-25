@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#11110f" />
+    <meta
+      name="description"
+      content="A personal corner of the internet for a developer who likes thoughtful interfaces and sturdy systems."
+    />
+    <title>Zotaro / digital craft</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=IBM+Plex+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="topbar">
+        <a class="wordmark" href="#top" aria-label="Zotaro home">
+          <span class="wordmark-mark">z/</span>
+          <span>Zotaro<span class="wordmark-dot">.</span>dev</span>
+        </a>
+        <div class="topbar-center" aria-label="Current focus">
+          <span class="status-dot"></span>
+          <span id="status-copy">open to interesting problems</span>
+        </div>
+        <nav class="topnav" aria-label="Primary navigation">
+          <a href="#work">work</a>
+          <a href="#notes">notes</a>
+          <a href="#contact">say hi <span class="nav-key">K</span></a>
+        </nav>
+      </header>
+
+      <main id="top">
+        <section class="intro section-frame" aria-labelledby="intro-title">
+          <div class="intro-index mono">00 / hello</div>
+          <div class="intro-copy">
+            <p class="kicker">DIGITAL CREATOR · DEVELOPER · PROBLEM SOLVER</p>
+            <h1 id="intro-title">
+              Got an idea? I can probably <em>build it.</em>
+            </h1>
+            <p class="intro-description">
+              I’m Damar, better known online as Zotaro — a digital creator who
+              turns ideas into things people can actually use.
+            </p>
+            <div class="intro-actions">
+              <a class="text-link text-link-accent" href="#work"
+                >See selected work <span aria-hidden="true">↘</span></a
+              >
+              <button class="text-link" type="button" data-command-trigger>
+                Open command menu <span class="shortcut">⌘ K</span>
+              </button>
+            </div>
+          </div>
+          <div class="intro-scribble" aria-hidden="true">
+            <span>currently</span>
+            <strong>turning ideas<br />into reality</strong>
+            <i></i>
+          </div>
+        </section>
+
+        <section class="signal-strip" aria-label="Quick details">
+          <div class="signal-item">
+            <span class="mono signal-label">based in</span
+            ><strong>somewhere online</strong>
+          </div>
+          <div class="signal-item">
+            <span class="mono signal-label">stack lately</span
+            ><strong>games / web / AI / whatever works</strong>
+          </div>
+          <div class="signal-item">
+            <span class="mono signal-label">tiny belief</span
+            ><strong>make it work, then make it good</strong>
+          </div>
+        </section>
+
+        <section
+          class="work section-frame"
+          id="work"
+          aria-labelledby="work-title"
+        >
+          <div class="section-heading">
+            <div>
+              <p class="kicker">01 / selected experiments</p>
+              <h2 id="work-title">Things I’ve<br /><em>built so far.</em></h2>
+            </div>
+            <p class="section-aside">
+              A collection of things I've built, broken, fixed, and shipped.
+            </p>
+          </div>
+
+          <div class="work-layout">
+            <div class="project-list" role="tablist" aria-label="Selected work">
+              <button
+                class="project-tab is-active"
+                type="button"
+                role="tab"
+                aria-selected="true"
+                data-project="0"
+              >
+                <span class="project-number mono">01</span>
+                <span class="project-tab-name">Di Balik Meja Otopsi</span>
+                <span class="project-tab-type mono">roblox / game</span>
+              </button>
+              <button
+                class="project-tab"
+                type="button"
+                role="tab"
+                aria-selected="false"
+                data-project="1"
+              >
+                <span class="project-number mono">02</span>
+                <span class="project-tab-name">Zotaro Devs</span>
+                <span class="project-tab-type mono">web / development</span>
+              </button>
+              <button
+                class="project-tab"
+                type="button"
+                role="tab"
+                aria-selected="false"
+                data-project="2"
+              >
+                <span class="project-number mono">03</span>
+                <span class="project-tab-name">Notif Scrap</span>
+                <span class="project-tab-type mono">discord / bot</span>
+              </button>
+            </div>
+
+            <article class="project-detail" aria-live="polite">
+              <div class="project-visual" data-visual="0">
+                <img
+                  class="project-visual-image"
+                  alt="Preview of Di Balik Meja Otopsi"
+                />
+              </div>
+              <div class="project-visual" data-visual="1" hidden>
+                <img
+                  class="project-visual-image"
+                  alt="Preview of Zotaro Devs"
+                />
+              </div>
+              <div class="project-visual" data-visual="2" hidden>
+                <img
+                  class="project-visual-image"
+                  alt="Preview of Notif Scrap"
+                />
+              </div>
+              <div class="project-info">
+                <div>
+                  <p class="mono project-meta" id="project-meta">
+                    ROBLOX / GAME DEVELOPMENT
+                  </p>
+                  <h3 id="project-title">Di Balik Meja Otopsi</h3>
+                </div>
+                <p id="project-description">
+                  A psychological horror game about an autopsy doctor and the
+                  secrets hidden inside a quiet morgue.
+                </p>
+                <div class="project-footer">
+                  <span class="mono" id="project-stack"
+                    >Lua / Roblox Studio / Particles</span
+                  ><a class="text-link" id="project-link" href="#contact"
+                    >Ask Project<span aria-hidden="true">↗</span></a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section
+          class="notes section-frame"
+          id="notes"
+          aria-labelledby="notes-title"
+        >
+          <div class="notes-marker mono">02 / field notes</div>
+          <div class="notes-content">
+            <div class="notes-heading">
+              <h2 id="notes-title">
+                I make ideas<br /><em>actually happen.</em>
+              </h2>
+              <span class="notes-arrow" aria-hidden="true">↙</span>
+            </div>
+            <div class="notes-copy">
+              <p>
+                Games, websites, AI, edits, weird experiments — if there's an
+                idea behind it, I'll figure out how to make it real.
+              </p>
+              <a
+                class="text-link text-link-accent"
+                href="mailto:damarrumble@gmail.com"
+                >Write me a tiny email <span aria-hidden="true">↗</span></a
+              >
+            </div>
+          </div>
+        </section>
+
+        <section
+          class="contact section-frame"
+          id="contact"
+          aria-labelledby="contact-title"
+        >
+          <div class="contact-meta mono">
+            <span>03 / transmission</span
+            ><span>AVAILABLE FOR INTERESTING PROJECTS</span>
+          </div>
+          <div class="contact-main">
+            <h2 id="contact-title">
+              Have an idea?<br /><em>Let's build it.</em>
+            </h2>
+            <div class="contact-links">
+              <a class="contact-all" href="mailto:damarradityo4@gmail.com">
+                damarradityo4@gmail.com
+                <span>↗</span>
+              </a>
+
+              <a class="contact-all" href="tel:+6289501193673">
+                +62 895-0119-3673
+                <span>↗</span>
+              </a>
+
+              <a
+                class="contact-all"
+                href="https://discord.com/users/870189926086500352"
+                target="_blank"
+              >
+                Discord
+                <span>↗</span>
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <span class="mono">© Zotaro / made with too much attention</span
+        ><a class="mono" href="#top">back to top ↑</a>
+      </footer>
+    </div>
+
+    <div class="command-dialog" data-command-dialog hidden>
+      <div class="command-backdrop" data-command-close></div>
+      <div
+        class="command-panel"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="command-title"
+      >
+        <div class="command-header">
+          <span class="mono" id="command-title">jump to</span
+          ><button
+            class="icon-button"
+            type="button"
+            aria-label="Close command menu"
+            data-command-close
+          >
+            esc
+          </button>
+        </div>
+        <div class="command-options">
+          <a href="#work" data-command-close
+            ><span class="mono">01</span> selected work <kbd>W</kbd></a
+          ><a href="#notes" data-command-close
+            ><span class="mono">02</span> field notes <kbd>N</kbd></a
+          ><a href="#contact" data-command-close
+            ><span class="mono">03</span> say hello <kbd>H</kbd></a
+          >
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
